@@ -5,9 +5,10 @@ import {
   Routes, 
   Route 
 } from "react-router-dom";
+import Home from "./pages/home/Home.jsx";
+import Training from "./pages/training/Training.jsx";
 import Header from "./components/sections/header/Header.jsx";
 import Footer from "./components/sections/footer/Footer.jsx";
-import Home from "./pages/home/Home.jsx";
 import "./assets/fontawesome.js";
 import "./assets/styles/reset.css";
 import "./assets/styles/App.css";
@@ -18,6 +19,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/capacitacion" element={<Training />} />
       </Routes>
       <Footer />
     </Router>

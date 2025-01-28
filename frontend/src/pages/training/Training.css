@@ -1,0 +1,65 @@
+.training-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.training-container .cards-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem 0;
+    padding: 10vh 0;
+    overflow: hidden;
+}
+
+.training-container .cards-container div {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.training-container .cards-container div:nth-child(odd) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: auto;
+    width: 55%;
+    background-color: #5A276B;
+    border-radius: 0 5rem 5rem 0;
+    padding: 4rem 5%;
+}
+
+.training-container .cards-container div:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    background-color: #945CA7;
+    border-radius: 5rem 0 0 5rem;
+    padding: 4rem 5%;
+}
+
+.training-container .cards-container div h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.training-container .cards-container div p {
+    font-size: 1.25rem;
+}
+
+.training-container .cards-container div {
+    transition: all 0.3s ease-in-out;
+}
+
+.training-container .cards-container div:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #6B357B;
+}
