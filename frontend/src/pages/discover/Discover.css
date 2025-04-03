@@ -1,0 +1,90 @@
+.discover-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10vh;
+}
+
+.discover-container h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #DD8A05;
+    margin-bottom: 1rem;
+}
+
+.discover-container .discover-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.discover-container .discover-content .navigation-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.discover-container .discover-content div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover-container .discover-content div:nth-child(2) h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: start;
+    padding-bottom: 3rem;
+}
+
+.discover-container .discover-content div:nth-child(2) div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 672px;
+}
+
+.discover-container .discover-content div:nth-child(2) div h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: start;
+    padding-bottom: 1rem;
+}
+
+.discover-container .discover-content div:nth-child(2) div p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.discover-container .more-discover-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.discover-container .more-discover-content div {
+    display: flex;
+    flex-direction: column;
+    max-width: 537px;
+}
+
+.discover-container .more-discover-content div h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.discover-container .more-discover-content div p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}

@@ -1,0 +1,97 @@
+.where-can-i-get-certified-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10vh;
+}
+
+.where-can-i-get-certified-container h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #DD8A05;
+    margin-bottom: 1rem;
+}
+
+.where-can-i-get-certified-container .where-can-i-get-certified-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.where-can-i-get-certified-container .where-can-i-get-certified-content .navigation-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.where-can-i-get-certified-container .where-can-i-get-certified-content .more-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.where-can-i-get-certified-container .where-can-i-get-certified-content .more-content h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: start;
+    padding-bottom: 3rem;
+    display: block;
+}
+
+.where-can-i-get-certified-container .where-can-i-get-certified-content .more-content .maps-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem 0;
+}
+
+.where-can-i-get-certified-container .where-can-i-get-certified-content .more-content .maps-container .map {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.where-can-i-get-certified-container .where-can-i-get-certified-content .more-content .maps-container .map iframe {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.where-can-i-get-certified-container .where-can-i-get-certified-content .more-content .maps-container .map iframe:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.where-can-i-get-certified-container .where-can-i-get-certified-content .more-content .maps-container .map iframe:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.where-can-i-get-certified-container .where-can-i-get-certified-content .more-content .maps-container .map div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.where-can-i-get-certified-container .where-can-i-get-certified-content .more-content .maps-container .map div h3 {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.where-can-i-get-certified-container .where-can-i-get-certified-content .more-content .maps-container .map div p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}

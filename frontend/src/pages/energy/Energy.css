@@ -1,0 +1,93 @@
+.energy-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.energy-container .banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.energy-container .banner-container h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    color: #679B07;
+    background-image: url("../../assets/images/energy/image1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    width: 100%; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    padding: 30vh 0;
+}
+
+.energy-container .banner-container p {
+    max-width: 1190px;
+    font-size: 1.25rem;
+    padding: 3rem 7%;
+}
+
+.energy-container .our-courses-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 5vh;
+}
+
+.energy-container .our-courses-container h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #679B07;
+    padding-bottom: 5vh;
+}
+
+.energy-container .our-courses-container table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.energy-container .our-courses-container thead {
+    background-color: #679B07;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.energy-container .our-courses-container th {
+    padding: 12px;
+    text-align: left;
+}
+
+.energy-container .our-courses-container tbody tr {
+    transition: background 0.3s ease;
+}
+
+.energy-container .our-courses-container tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.energy-container .our-courses-container tbody tr:hover {
+    background-color: #d4e6a5;
+}
+
+.energy-container .our-courses-container td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}

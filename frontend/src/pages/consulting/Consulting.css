@@ -1,0 +1,107 @@
+.consulting-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 5vh;
+}
+
+.consulting-container h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    color: #DD8A05;
+}
+
+.consulting-container .consulting-content {
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.consulting-container .consulting-content div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.consulting-container .consulting-content div img {
+    max-width: 360px;
+    height: auto;
+}
+
+.consulting-container .consulting-content div p {
+    margin-top: 3rem;
+    font-size: 1.25rem;
+    max-width: 473px;
+}
+
+.consulting-container .consulting-content ul {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem 0;
+}
+
+.consulting-container .consulting-content ul li {
+    display: flex;
+    width: 100%;
+}
+
+.consulting-container .consulting-content ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 1rem 5%;
+    border-radius: 1.5rem;
+    color: #FFFFFF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.consulting-container .consulting-content ul li:nth-child(1) a,
+.consulting-container .consulting-content ul li:nth-child(4) a {
+    background: linear-gradient(135deg, #FFEB3B, #FFC107); /* Amarillo más vibrante */
+}
+
+.consulting-container .consulting-content ul li:nth-child(2) a,
+.consulting-container .consulting-content ul li:nth-child(5) a {
+    background: linear-gradient(135deg, #81C784, #43A047); /* Verde intermedio más equilibrado */
+}
+
+.consulting-container .consulting-content ul li:nth-child(3) a,
+.consulting-container .consulting-content ul li:nth-child(6) a {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+}
+
+
+.consulting-container .consulting-content ul li a::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    top: 0;
+    left: -150%;
+    transform: skewX(-30deg);
+    transition: left 0.5s ease-in-out;
+}
+
+.consulting-container .consulting-content ul li a:hover::before {
+    left: 150%;
+}
+
+.consulting-container .consulting-content ul li a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
