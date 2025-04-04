@@ -11,11 +11,11 @@ const Header = () => {
             </div>
             <nav>
                 <Link to="/">CIDTES</Link>
-                <Link to="/">Capacitación</Link>
-                <Link to="/">Certificación</Link>
-                <Link to="/">Consultoria</Link>
-                <Link to="">Investigación consultoria</Link>
-                <Link to="">Únete</Link>
+                <Link to="/capacitacion">Capacitación</Link>
+                <Link to="/certificacion/conocer">Certificación</Link>
+                <Link to="/consultoria">Consultoria</Link>
+                <Link to="/investigacion-y-desarrollo/1">Investigación consultoria</Link>
+                <Link to="/contacto">Únete</Link>
             </nav>
         </header>
     );

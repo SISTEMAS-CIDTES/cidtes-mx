@@ -17,6 +17,7 @@ import OurExperience from "../../assets/images/home/our-experience.png";
 import Commitment1 from "../../assets/images/home/Commitment1.png";
 import Commitment2 from "../../assets/images/home/Commitment2.png";
 import Commitment3 from "../../assets/images/home/Commitment3.png";
+import Values from "../../assets/images/home/Values.png";
 import "./Home.css";
 
 const Home = () => {
@@ -85,6 +86,10 @@ const Home = () => {
                 </ul>
             </section>
             <section className="values-container">
+                <section className="our-values-container">
+                    <h2>Nuestros Valores</h2>
+                    <img src={Values} alt=""/>
+                </section>
                 <section className="mission-and-vision-container">
                     <div className="mission-and-vision">
                         <div className="circle"></div>

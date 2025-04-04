@@ -173,6 +173,13 @@
     flex-direction: column;
 }
 
+.home-container .values-container .our-values-container h2 {
+    font-weight: 900;
+    font-size: 5rem;
+    color: #397383;
+    padding: 0rem 0 2rem 0;
+}
+
 .home-container .values-container .mission-and-vision-container {
     flex-direction: column;
     justify-content: center;

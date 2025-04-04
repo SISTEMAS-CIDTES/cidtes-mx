@@ -1,12 +1,6 @@
 export const sendEmail = async (formData) => {
-    console.log(process.env.REACT_APP_URL_SERVER);
-    console.log(process.env.REACT_APP_EMAIL_ENDPOINT);
-    console.log(process.env.REACT_APP_EMAIL_TOKEN_SECRET);
-    console.log(formData);
-    console.log("HOLA");
     try {
         const endPoint = `${process.env.REACT_APP_URL_SERVER}${process.env.REACT_APP_EMAIL_ENDPOINT}`;
-        console.log(endPoint);
         const response = await fetch(endPoint, {
             method: 'POST',
             headers: {
@@ -15,7 +9,6 @@ export const sendEmail = async (formData) => {
             },
             body: JSON.stringify(formData),
         });
-        console.log(response);
         if (!response.ok) {
             throw new Error(`Error al enviar el correo: ${response.status} ${response.statusText}`);
         }
