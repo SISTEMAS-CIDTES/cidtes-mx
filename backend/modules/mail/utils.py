@@ -19,7 +19,7 @@ def html_email_message(fullname, email, phone_number, subject, message):
         <html>
             <body style="font-family: Arial, sans-serif; color: #333;">
                 <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; border: 1px solid #ddd;">
-                    <h1 style="color: #007bff;">Nuevo mensaje de contacto desde aktuarios.com.mx</h1>
+                    <h1 style="color: #007bff;">Nuevo mensaje de contacto desde "AQUI VA EL DOMINIO DE CIDTES"</h1>
                     <p>Un cliente ha enviado un mensaje a través del formulario de contacto. Por favor, responde lo antes posible.</p>
                     <p style="color: red;"><strong>Nota de seguridad:</strong> El departamento de sistemas recomienda no abrir enlaces externos que no sean de confianza, ya que podrían ser intentos de phishing.</p>
                 </div>
@@ -33,7 +33,7 @@ def html_email_message(fullname, email, phone_number, subject, message):
                     <p>{message}</p>
                 </div>
                 <footer style="margin-top: 20px; font-size: 0.9em; color: #777;">
-                    <p>Este mensaje fue generado automáticamente por el sistema de contacto de aktuarios.com.mx.</p>
+                    <p>Este mensaje fue generado automáticamente por el sistema de "AQUI VA EL DOMINIO DE CIDTES"</p>
                 </footer>
             </body>
         </html>

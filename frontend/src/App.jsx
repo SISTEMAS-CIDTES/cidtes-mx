@@ -17,6 +17,7 @@ import ResearchAndDevelopment1 from "./pages/research-and-development-1/Research
 import ContactUs from "./pages/contact-us/ContactUs.jsx";
 import Header from "./components/sections/header/Header.jsx";
 import Footer from "./components/sections/footer/Footer.jsx";
+import NotFoundPage from "./pages/not-found-page/NotFoundPage.jsx";
 import "./assets/fontawesome.js";
 import "./assets/styles/reset.css";
 import "./assets/styles/animations.css";
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/capacitacion" element={<Training />} />
         <Route path="/capacitacion/energia" element={<Energy />} />
         <Route path="/contacto" element={<ContactUs />} />
+        <Route path="/*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
     </Router>

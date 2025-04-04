@@ -1,0 +1,47 @@
+.not-found-page-container {
+    background-color: #FAFAFA;
+    opacity: 0.7;
+    background-image:  linear-gradient(#D0D0D0 2.6px, transparent 2.6px), linear-gradient(to right, #D0D0D0 2.6px, #FAFAFA 2.6px);
+    padding: 20vh 0;    
+    background-size: 52px 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.not-found-page-container h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.not-found-page-container p {
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem 5%;
+    box-sizing: border-box;
+}
+
+.not-found-page-container a {
+    text-decoration: none;
+    margin-top: 2rem;
+    background: #fdfdfd;
+    color: #000;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid #333;
+  padding: 8px 16px;
+  font-size: 3rem;
+    font-weight: 900;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #bbb, -2px -2px 0px #eee;
+  position: relative;
+  transition: 0.2s ease;
+}
+
+.not-found-page-container a:hover {
+    transform: scale(1.05);
+}
