@@ -1,27 +1,89 @@
 .header-container {
-    background-color: rgba(138, 205, 234, 0.35);
+    background-color: white;
     display: flex;
     align-items: center;
+    border-bottom: 3px solid #F6F6F6;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 5px 5%;
     justify-content: space-between;
-    box-sizing:content-box;
-    margin: 10vh 3vw;
-    padding: 3vh 4vw;
-    border-radius: 3rem;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header-container > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.header-container > a > img {
+    max-height: 50px;
+    width: auto;
+}
+
+.header-container > a:hover {
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+    background-color: #F6F6F6;
+    border-radius: 0.5rem;
 }
 
 .header-container nav {
     display: flex;
-    gap: 0 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    justify-content: space-evenly;
 }
 
-
 .header-container nav a {
-    color: #000000;
-    text-decoration: none;
-    width: 91px;
-    text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 16%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.header-container nav a:hover {
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.header-container nav button {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-container > nav > a {
+        display: none;
+    }
+
+    .header-container > nav > button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-container > a {
+        width: auto;
+    }
+
+    .header-container > a > img {
+        max-height: 35px;
+        width: auto;
+    }
+
+    .header-container nav {
+        justify-content: flex-end;
+    }
 }
