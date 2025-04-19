@@ -58,10 +58,10 @@ const Home = () => {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-                <h1>¡Bienvenido a CIDTES!</h1>
-                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos deLorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno  estándar de las industrias desde el año 1500, cuando un impresor (N. del  T</p>
+                {/**<h1>¡Bienvenido a CIDTES!</h1>
+                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos deLorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno  estándar de las industrias desde el año 1500, cuando un impresor (N. del  T</p>*/}
             </section>
-            <section className="meet-us-container">
+            {/**<section className="meet-us-container">
                 <h2>¡Conócenos!</h2>
                 <p>Estamos comprometidos a proporcionar una asesoría del más alto nivel de calidad, a través de un servicio personalizado, herramientas de comunicación y a través de un equipo de expertos con iniciativa, receptivo y con una amplia experiencia como Asesores y/o Auditores. Dicha experiencia, nos permite identificar necesidades y/o riesgos que pueden resultar al evaluar procesos integrales y/o operativos de las distintas áreas involucradas, de tal manera que nos permita dar beneficios o un gran valor agregado. </p>
             </section>
@@ -130,7 +130,7 @@ const Home = () => {
                         ))
                     }
                 </ul>
-            </section>
+            </section>*/}
         </section>
     );
 };
