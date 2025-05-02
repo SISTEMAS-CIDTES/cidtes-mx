@@ -9,21 +9,46 @@ import {
     Navigation,
     Autoplay
 } from 'swiper/modules';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
-import OurExperience from "../../assets/images/home/our-experience.png";
-import Commitment1 from "../../assets/images/home/Commitment1.png";
-import Commitment2 from "../../assets/images/home/Commitment2.png";
-import Commitment3 from "../../assets/images/home/Commitment3.png";
-import Values from "../../assets/images/home/Values.png";
 import "./Home.css";
 
+const ads = [
+    "1.jpg", "2.jpg", "3.jpg", "4.webp"
+];
+
+const clients = [
+    "1.png", "2.png", "3.png", "4.png", "5.jpg",
+    "6.png", "7.svg", "8.png", "9.png", "10.jpg",
+    "11.jpeg", "12.jpeg", "13.png", "14.jpeg", "15.png"
+];
+
+const partners = [
+    "1.png", "2.png", "3.png", "4.png", "5.png",
+    "6.jpg", "7.png", "8.png", "9.png", "10.png",
+    "11.png", "12.webp", "13.jpeg"
+];
+
+const collaborations = [
+    "1.png", "2.jpg", "3.jpg", "4.jpg", "5.jpg",
+    "6.png", "7.png", "8.jpg"
+];
+
 const Home = () => {
+    const repeatedClients = [...clients, ...clients, ...clients];
+    const repeatedPartners = [...partners, ...partners, ...partners];
+    const repeatedCollaborations = [...collaborations, ...collaborations, ...collaborations];
+
     return (
         <section className="home-container">
             <section className="banner-container">
+                <div>
+                    <h1>CIDTES Energía y Sustentabilidad</h1>
+                    <p>Somos una organización interdisciplinaria que brinda soluciones integrales en energía, sustentabilidad, seguridad y salud en el trabajo y desarrollo organizacional. Promoviendo la capacitación, la certificación, la investigación, el desarrollo tecnológico y la implementación de proyectos para mejores prácticas.</p>
+                </div>
                 <div className="my-cidtes-swiper-container">
                     <Swiper
                         slidesPerView={1}
@@ -44,93 +69,156 @@ const Home = () => {
                         className="mySwiper"
                         navigation={true}
                     >
-                        <SwiperSlide>
-                            <img src={OurExperience} alt=""/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={OurExperience} alt=""/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={OurExperience} alt=""/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={OurExperience} alt=""/>
-                        </SwiperSlide>
+                        {
+                            ads.map((ad, index) => {
+                                return (
+                                    <SwiperSlide key={index}>
+                                        <img src={`/images/home/ads/${ad}`} alt=""/>
+                                    </SwiperSlide>
+                                );
+                            })
+                        }
                     </Swiper>
                 </div>
-                {/**<h1>¡Bienvenido a CIDTES!</h1>
-                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos deLorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno  estándar de las industrias desde el año 1500, cuando un impresor (N. del  T</p>*/}
             </section>
-            {/**<section className="meet-us-container">
-                <h2>¡Conócenos!</h2>
-                <p>Estamos comprometidos a proporcionar una asesoría del más alto nivel de calidad, a través de un servicio personalizado, herramientas de comunicación y a través de un equipo de expertos con iniciativa, receptivo y con una amplia experiencia como Asesores y/o Auditores. Dicha experiencia, nos permite identificar necesidades y/o riesgos que pueden resultar al evaluar procesos integrales y/o operativos de las distintas áreas involucradas, de tal manera que nos permita dar beneficios o un gran valor agregado. </p>
-            </section>
-            <section className="our-commitments-container">
+            <section className="our-compromises-container">
                 <h2>Nuestros Compromisos</h2>
                 <ul>
                     <li>
-                        <img src={Commitment1} alt=""/>
-                        <h3>Desarrollo Económico</h3>
-                        <p>Proponer soluciones que optimicen recursos naturales, materiales y financieros para fortalecer la calidad, innovación y adaptabilidad de organizaciones, empresas e instituciones, promoviendo el trabajo decente y el desarrollo económico del país.</p>
+                        <FontAwesomeIcon icon="fa-solid fa-universal-access" />
+                        <h3>Desarrollo Social</h3>
+                        <p>Promover el desarrollo de l@s  niñ@s y una sociedad corresponsable, a través de la difusión y educación de calidad con el fin de integrar comunidades con principios y valores que contribuyan a reducir las desigualdades, la pobreza y alcanzar la equidad de género, potencializando el talento humano.</p>
                     </li>
                     <li>
-                        <img src={Commitment2} alt=""/>
+                        <FontAwesomeIcon icon="fa-solid fa-earth-americas" />
+                        <h3>Desarrollo Económico</h3>
+                        <p>Establecer soluciones que aprovechen los recursos naturales, materiales y financieros para que las organizaciones sociales, empresas e instituciones fortalezcan la calidad, innovación y adaptabilidad a los cambios con el objetivo de contribuir al trabajo decente y el desarrollo económico del país. </p>
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon="fa-solid fa-leaf" />
                         <h3>Desarrollo Ambiental</h3>
                         <p>Promocionar la energía asequible y no contaminante, así como la producción y consumos responsables con el objetivo de optimizar los recursos naturales y mitigar el cambio climático.</p>
                     </li>
-                    <li>
-                        <img src={Commitment3} alt=""/>
-                        <h3>Desarrollo Social</h3>
-                        <p>Fomentar el desarrollo infantil y una sociedad corresponsable mediante educación de calidad, promoviendo comunidades con valores para reducir desigualdades, pobreza y lograr equidad de género, potenciando el talento humano.</p>
-                    </li>
                 </ul>
+            </section>
+            <section>
+                <div>
+                    <div>
+                        <img src="" alt="" />
+                    </div>
+                    <div>
+                        <h2>Misión</h2>
+                        <p>Promover la investigación, la innovación y el desarrollo de proyectos en temas de energía, sustentabilidad y seguridad y salud en el trabajo, así como fomentar el desarrollo de capacidades, la asesoría técnica especializada y el fortalecimiento de la cultura.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="" alt="" />
+                    </div>
+                    <div>
+                        <h2>Visión</h2>
+                        <p>Ser líder en soluciones sustentables, conformando un grupo de expertos que actúe como agente de cambio en México.</p>
+                    </div>
+                </div>
             </section>
             <section className="values-container">
-                <section className="our-values-container">
-                    <h2>Nuestros Valores</h2>
-                    <img src={Values} alt=""/>
-                </section>
-                <section className="mission-and-vision-container">
-                    <div className="mission-and-vision">
-                        <div className="circle"></div>
-                        <div className="text">
-                            <h3>Misión</h3>
-                            <p>Promover la investigación, la innovación y el desarrollo de proyectos en temas de energía, sustentabilidad y seguridad y salud en el trabajo, así como fomentar el desarrollo de capacidades, la asesoría técnica especializada y el fortalecimiento de la cultura.</p>
-                        </div>
-                    </div>
-                    <div className="mission-and-vision">
-                        <div className="text">
-                            <h3>Visión</h3>
-                            <p>Ser líder en soluciones sustentables, conformando un grupo de expertos que actúe como agente de cambio en México.</p>
-                        </div>
-                        <div className="circle"></div>
-                    </div>
-                </section>
-            </section>
-            <section className="our-experience-container">
-                <h2>Nuestra Experiencia</h2>
+                <h2>Nuestros Valores</h2>
                 <div>
-                    <img src={OurExperience} alt="Our Experience" />
+                    <div>
+                        <h2>C</h2>
+                        <p>ompromiso Social</p>
+                    </div>
+                    <div>
+                        <h2>C</h2>
+                        <p>alidad</p>
+                    </div>
+                    <div>
+                        <h2>I</h2>
+                        <p>ntegridad</p>
+                    </div>
+                    <div>
+                        <h2>D</h2>
+                        <p>edicación</p>
+                    </div>
+                    <div>
+                        <h2>T</h2>
+                        <p>rabajo en Equipo</p>
+                    </div>
+                    <div>
+                        <h2>E</h2>
+                        <p>quidad</p>
+                    </div>
+                    <div>
+                        <h2>S</h2>
+                        <p>ervicio</p>
+                    </div>
                 </div>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
             </section>
-            <section className="clients-container">
-                <h2>Nuestros Clientes</h2>
-                <ul>
-                    {
-                        Array.from({ length: 20 }, (_, index) => (
-                            <li key={index}>
-                                <img src="https://img.freepik.com/vector-gratis/diseno-logotipo-degradado-mc_23-2149487341.jpg" alt="Logo" />
-                            </li>
-                        ))
-                    }
-                </ul>
-            </section>*/}
+            <section className="carrousels-container">
+                <section className="carrousel-container">
+                    <div className="subcarrousel-container">
+                        <h2>Nuestra Cartera de Clientes</h2>
+                        <div>
+                            <div className="clients-cards-container">
+                                {
+                                    repeatedClients.map((client, index) => {
+                                        return (
+                                            <div key={index}>
+                                                <img
+                                                    src={`/images/home/clients/${client}`}
+                                                    alt="Logo"
+                                                />
+                                            </div>
+                                        );
+                                    })
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="carrousel-container">
+                    <div className="subcarrousel-container">
+                        <h2>Alianzas Estratégicas</h2>
+                        <div>
+                            <div className="partnerships-cards-container">
+                                {
+                                    repeatedPartners.map((partner, index) => {
+                                        return (
+                                            <div key={index}>
+                                                <img
+                                                    src={`/images/home/partners/${partner}`}
+                                                    alt="Logo"
+                                                />
+                                            </div>
+                                        );
+                                    })
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="carrousel-container">
+                    <div className="subcarrousel-container">
+                        <h2>Colaboraciones</h2>
+                        <div>
+                            <div className="collaborations-cards-container">
+                                {
+                                    repeatedCollaborations.map((collaboration, index) => {
+                                        return (
+                                            <div key={index}>
+                                                <img
+                                                    src={`/images/home/collaborations/${collaboration}`}
+                                                    alt="Logo"
+                                                />
+                                            </div>
+                                        );
+                                    })
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
         </section>
     );
 };

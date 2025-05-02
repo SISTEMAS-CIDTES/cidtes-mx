@@ -1,6 +1,8 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
-
+    faEarthAmericas,
+    faLeaf,
+    faUniversalAccess
 } from "@fortawesome/free-solid-svg-icons";
 import {
     faLinkedin,
@@ -13,5 +15,8 @@ library.add(
     faLinkedin,
     faFacebook,
     faYoutube,
-    faInstagram
+    faInstagram,
+    faEarthAmericas,
+    faLeaf,
+    faUniversalAccess
 );
